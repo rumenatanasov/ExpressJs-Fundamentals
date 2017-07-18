@@ -1,0 +1,64 @@
+h1 {
+    color: red;
+}
+
+main {
+    padding: 0 40px;
+}
+
+
+.form-group label {
+    font-size: 1.2em;
+    width: 15%;
+    display: inline-block;
+    text-align: start;
+    padding-right: 20px;
+    vertical-align: top;
+}
+
+.btn {
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    color: inherit;
+    display: inline-block;
+    text-decoration-line: none;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #2fa4e7;
+    border-color: #2fa4e7;
+}
+
+.image-card {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 33%;
+    display: inline-block;
+}
+
+.image-img {
+    width: 300%;
+    max-width: 350px;
+    max-height: 350px;
+}
+
+.cards {
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+footer {
+    text-align: center;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
