@@ -1,0 +1,40 @@
+ Set up MongoDB and Mongoose
+
+Initially make sure to have installed MongoDB on your machine. Next, cool UI program for visualizing data and
+
+schema would be pretty nice. For this lab is used RoboMongo – you can choose any other alternative you like or
+
+none at all.
+
+To make sure that everything is up and ready run this command in command prompt:
+
+mongod -- dbpath {yourCustomPath}
+
+yourCustomPath – place where database files generated from MongoDB will be stored
+
+*Note that: -- dbpath {yourCustomPath} is optional by default and it will store information in &quot;C:\data\db –
+
+if such directory exists
+
+After the command is executed some output (or simply called 'noise') should be printed. If everything goes well the
+
+program will continue working. Do not close the window because it is our connection to database.
+
+Warning: Keep in mind that when you are working with any application which connects MongoDB - this window
+
+should always be open!
+
+Content of this project: 
+1. Install MondoDB and Mongoose
+
+2.Create Node.js module named instanode-db which is able to save tags and images. Each tag has name, creation
+
+date and multiple images. Each image has URL, creation date, description and multiple tags. Separate the models
+
+into different modules.
+
+3. Add saving of images
+
+4. Add search by tag
+
+5. Add search by creation date
