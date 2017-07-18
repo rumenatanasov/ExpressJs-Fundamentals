@@ -1,0 +1,21 @@
+{{#each thread}}
+<h1>{{title}}</h1>
+<p>{{description}}</p>
+<p><a href="/profile/{{creator.username}}">{{this.creator.username}}</a></p>
+{{date}}
+
+ {{/each}}
+ 
+ <a href="/delete/{{thread._id}}">Delete</a>
+
+
+<form method="post" action="/thread/{{thread._id}}/{{thread.title}}">
+    <textarea rows="10" name="content" placeholder="Write your comment..." required></textarea>
+    <input type="submit" value="Answer" />
+</form>
+{{#each answers}}
+<h1>{{content}}</h1>
+<h2>created by :{{creator.username}}</h2>
+{{date}}
+<a href="/answer/delete/{{id}}">Delete</a>
+{{/each}}

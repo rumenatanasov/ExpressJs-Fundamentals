@@ -1,0 +1,10 @@
+<h1>Created Threads</h1>
+{{#each threads}}
+ <h1><a href="/thread/{{this._id}}/{{title}}">{{title}}</a></h1>
+{{/each}}
+
+<h2>Answers</h2>
+{{#each answers}}
+   <h1><a href="/thread/{{this._id}}/{{}}">{{content}}</a></h1>
+   
+{{/each}}

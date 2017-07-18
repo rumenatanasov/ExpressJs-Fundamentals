@@ -1,0 +1,23 @@
+<form action="/thread/all" method="GET">
+  <input type="text" name="search" />
+  <input type="submit" value="search" />
+</form>
+
+<h1>All Threads</h1>
+{{#each threads}}
+<article>
+  <h3><a href="/post/{{this._id}}/{{this.title}}">{{this.title}}</a></h3>
+  <p>posted on: {{this.date}}</p>
+  <p>author: <a href="/profile/{{this.creator.username}}">{{this.creator.username}}</a></p>
+  <p> Last answer: {{this.lastAnswerDate}}</p>
+  <p><span>Views: {{this.views}} </span><span>Likes: {{this.likes}} </span></p>
+</article>
+{{else}}
+<h1>No threads available</h1>
+{{/each}}
+
+<div>
+  {{#if hasPrevPage}}
+  <a href="/thread/all?page={{prevPage}}">&lt;&lt;</a> &nbsp; &nbsp; &nbsp; {{/if}} {{#if hasNextPage}}
+  <a href="/thread/all?page={{nextPage}}">&gt;&gt;</a> {{/if}}
+</div>
