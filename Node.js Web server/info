@@ -1,0 +1,10 @@
+To start the project you need to download node_modules. In the folder of the project open command window and type npm install. 
+
+Content of this project:
+1. Restrict the static file handler
+2. Create HTML with a form
+3. Create HTML listing all saved images by their name
+4. Create details page for an image
+5. Add menus
+6. Write a header handler
+7. Use GULP to minify the HTML
