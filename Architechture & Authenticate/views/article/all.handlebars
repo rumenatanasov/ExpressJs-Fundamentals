@@ -1,0 +1,24 @@
+<form action="/article/all" method="get">
+    <input type="text" name="search" placeholder="Search..." />
+    <input type="submit" value="search" />
+</form>
+<div>
+    <h1>All Articles</h1>
+    {{#each articles}}
+     <h1>{{title}}</h1>
+     <h2><a href="/article/details/{{id}}">View Details</a></h2>
+     <a href="/article/edit/{{id}}">Edit Product</a>
+    {{else}}
+      <h1>No articles available</h1> 
+    {{/each}}
+ 
+</div>
+<div>
+    {{#if hasPrevPage}}
+      <a href="/article/all?page={{prevPage}}">&lt;&lt;</a>
+       &nbsp; &nbsp; &nbsp;
+    {{/if}}
+    {{#if hasNextPage}}
+      <a href="/article/all?page={{nextPage}}">&gt;&gt;</a>
+    {{/if}}    
+</div>
